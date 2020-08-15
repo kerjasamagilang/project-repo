@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery KDM</title>
+    <link rel="stylesheet" href="..//css/gallery.css">
+</head>
+<body>
+    <section id="portfolio">
+        <div class="project">
+            <img src="..//img/oke.png" alt="" class="project-image">
+            <div class="grid-overlay">
+                <button class="viewbutton">View More</button>
+            </div>
+        </div>
+
+
+        <div class="project">
+            <img src="..//img/second.png" alt="" class="project-image">
+            <div class="grid-overlay">
+                <button class="viewbutton">View More</button>
+            </div>
+        </div>
+
+
+        <div class="project">
+            <img src="..//img/third.png" alt="" class="project-image">
+            <div class="grid-overlay">
+                <button class="viewbutton">View More</button>
+            </div>
+        </div>
+
+
+        <div class="project">
+            <img src="..//img/four.png" alt="" class="project-image">
+            <div class="grid-overlay">
+                <button class="viewbutton">View More</button>
+            </div>
+        </div>
+
+
+        <div class="project">
+            <img src="..//img/five.png" alt="" class="project-image">
+            <div class="grid-overlay">
+                <button class="viewbutton">View More</button>
+            </div>
+        </div>
+
+
+        <div class="project">
+            <img src="..//img/six.png" alt="" class="project-image">
+            <div class="grid-overlay">
+                <button class="viewbutton">View More</button>
+            </div>
+        </div>
+
+
+        <div class="project">
+            <img src="..//img/seven.png" alt="" class="project-image">
+            <div class="grid-overlay">
+                <button class="viewbutton">View More</button>
+            </div>
+        </div>
+
+
+        <div class="project">
+            <img src="..//img/eight.png" alt="" class="project-image">
+            <div class="grid-overlay">
+                <button class="viewbutton">View More</button>
+            </div>
+        </div>
+        
+
+        <div class="overlay">
+            <div class="overlay-inner">
+                <button class="close">Close X</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        
+        const buttons = document.querySelectorAll('.project');
+        const overlay = document.querySelector('.overlay');
+        const overlayImage = document.querySelector('.overlay-inner img');
+
+        function open(e){
+            overlay.classList.add('open');
+            const src = e.currentTarget.querySelector('img').src;
+            overlayImage.src = src;
+        }
+
+        function close(){
+            overlay.classList.remove('open');
+        }
+
+        buttons.forEach(button => button.addEventListener('click', open));
+        overlay.addEventListener('click', close);
+
+
+
+
+    </script>
+</body>
+</html>

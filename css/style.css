@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: calibri;
+    box-sizing: border-box;
+}
+body {
+    font-weight: normal;
+}
+.fullcontainer{
+    width: 100%;
+    height: 663px;
+    background: url(..//img/bg.png) no-repeat;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.logo{
+    float: left;
+    margin-right: 50px;
+}
+.logo a{
+    display: block;
+    padding:  25px 0;
+}
+header {
+    width: 100%;
+    height: 100%;
+}
+header nav ul li {
+    position: relative;
+    margin: 0px;
+}
+ul.menu-left{
+    float: left;
+}
+ul.menu-right{
+    float: right;
+}
+ul{
+    list-style: none;
+    padding: 20px 0;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    display: block;
+    color: rgba(255,255,255,.7);
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .5s all ease;
+}
+ul li a:hover{
+    color: #fff;
+}
+ul li a i{
+    font-size: small;
+    padding-left: 3px;
+}
+
+.dropdownmenu ul{
+    width: 425px;
+    background: #fff;
+    position: absolute;
+    top: 4rem;
+    left: 4.75rem;
+    padding: 0;
+    border-radius: 5px;
+}
+.dropdownmenu ul::before{
+    content: '';
+    position: absolute;
+    left: 12.3rem;
+    border: 10px solid;
+    border-color: transparent transparent #fff transparent;
+}
+.dropdownmenu ul li{
+    display: block;
+    padding: 18px;
+    padding-left: 110px;
+    transition:  .2s all ease;
+    border-radius: 5px;
+    border-top: 1px solid transparent;
+}
+.dropdownmenu>ul>li>a{
+    display: block;
+    padding: 0;
+    color: #000;
+    cursor: pointer;
+}
+.dropdownmenu ul li:nth-child(1){
+    background: #f3f6f9 url(img/icon1.PNG) no-repeat;
+    background-position: center left 40px;
+    background-size: 12%;
+}
+.dropdownmenu ul li:nth-child(2){
+    background: #f3f6f9 url(img/icon2.PNG) no-repeat;
+    background-position: center left 40px;
+    background-size: 12%;
+}
+.dropdownmenu ul li:nth-child(3){
+    background: #f3f6f9 url(img/icon3.PNG) no-repeat;
+    background-position: center left 40px;
+    background-size: 12%;
+}
+.dropdownmenu ul li:nth-child(4){
+    background: #f3f6f9 url(img/icon4.PNG) no-repeat;
+    background-position: center left 40px;
+    background-size: 12%;
+}
+.dropdownmenu ul li:nth-child(5){
+    background: #f3f6f9 url(img/icon5.PNG) no-repeat;
+    background-position: center left 40px;
+    background-size: 12%;
+}
+.dropdownmenu ul li:nth-child(6){
+    background: #f3f6f9 url(img/icon6.PNG) no-repeat;
+    background-position: center left 40px;
+    background-size: 12%;
+}
+.dropdownmenu ul li:last-child{
+    background: #f3f6f9 url(img/icon7.PNG) no-repeat;
+    background-position: center left 27%;
+    background-size: 7%;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #dae0e8;
+}
+.dropdownmenu ul:nth-child(2) {
+    left: 16.40rem;
+}
+.dropdownmenu ul:nth-child(2) li:nth-child(1){
+    background: #f3f6f9 url(img/icon8.PNG) no-repeat;
+    background-position: center left 40px;
+    background-size: 12%;
+}
+.dropdownmenu ul:nth-child(2) li:nth-child(2){
+    background: #f3f6f9 url(img/icon9.PNG) no-repeat;
+    background-position: center left 40px;
+    background-size: 12%;
+}
+.dropdownmenu ul:nth-child(2) li:nth-child(3){
+    background: #f3f6f9 url(img/icon10.PNG) no-repeat;
+    background-position: center left 40px;
+    background-size: 12%;
+}
+.dropdownmenu ul:nth-child(2) li:nth-child(4){
+    background: #f3f6f9 url(img/icon11.PNG) no-repeat;
+    background-position: center left 40px;
+    background-size: 12%;
+}
+.dropdownmenu ul:nth-child(2) li:last-child{
+    background: #f3f6f9;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+}
+.dropdownmenu ul:nth-child(2) li> .leftOption{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.dropdownmenu ul:nth-child(2) li> .rightOption{
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border-left: 1px solid #dae0e8;
+}
+.dropdownmenu ul:nth-child(2) li> .leftOption h4, .rightOption h4{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #b7bfd8;
+    padding-bottom: 5px;
+}
+.dropdownmenu ul:nth-child(2) li> .leftOption a, .rightOption a{
+    display: block;
+    color: #0069ff;
+    text-transform: capitalize;
+    padding: 0;
+    padding-bottom: 5px;
+}
+.dropdownmenu ul:nth-child(2) li>.rightOption a:hover{
+    color: #0069ff;
+}
+.dropdownmenu ul:nth-child(3){
+    left: 56.25rem;
+    width: 250px;
+}
+.dropdownmenu ul:nth-child(3)>li{
+    padding-left: 50px;
+}
+.dropdownmenu ul:nth-child(3):before{
+    left: 4.44rem;
+}
+.dropdownmenu ul:nth-child(3) li:nth-child(1){
+    background: #f3f6f9 url(img/icon12.PNG) no-repeat;
+    background-position: center left 20px;
+    background-size: 10%;
+}
+.dropdownmenu ul:nth-child(3) li:nth-child(2){
+    background: #f3f6f9 url(img/icon13.PNG) no-repeat;
+    background-position: center left 20px;
+    background-size: 10%;
+}
+.dropdownmenu ul:nth-child(3) li:last-child{
+    background: #f3f6f9 url(img/icon14.PNG) no-repeat;
+    background-position: center left 20px;
+    background-size: 10%;
+    text-align: left;
+    border-top: none;
+}
+.signUp{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: 1s;
+}
+.signUp:hover {
+    background-color: #fff;
+    color: #000;
+}
+.dropdownmenu ul li:hover{
+    background-color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 1px 12px 0 rgba(128,128,128,.25);
+}
+.dropdownmenu ul:nth-child(2) li:last-child:hover{
+    transform: scale(1);
+    box-shadow: none;
+}
+.container .messege{
+    clear: both;
+    padding-top: 10rem;
+}
+.container .messege h2{
+    font-size: 38px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.container .messege a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: 1s;
+    padding: 10px 15px;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+}
+.container .messege a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+
+
+
